@@ -15,7 +15,7 @@ const Register = () => {
 
   return (
     <Helmet title="Signup">
-      <CommonSection title="Signup" />
+      <CommonSection title="Registrarse" />
       <section>
         <Container>
           <Row>
@@ -24,7 +24,7 @@ const Register = () => {
                 <div className="form__group">
                   <input
                     type="text"
-                    placeholder="Full name"
+                    placeholder="Nombre Completo"
                     required
                     ref={signupNameRef}
                   />
@@ -40,16 +40,16 @@ const Register = () => {
                 <div className="form__group">
                   <input
                     type="password"
-                    placeholder="Password"
+                    placeholder="Contraseña"
                     required
                     ref={signupPasswordRef}
                   />
                 </div>
                 <button type="submit" className="addTOCart__btn">
-                  Sign Up
+                  Registrarse
                 </button>
               </form>
-              <Link to="/login">Already have an account? Login</Link>
+              <Link to="/login">Ya tienes una cuenta? Ingresa</Link>
             </Col>
           </Row>
         </Container>

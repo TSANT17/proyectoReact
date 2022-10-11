@@ -14,7 +14,7 @@ const Login = () => {
 
   return (
     <Helmet title="Login">
-      <CommonSection title="Login" />
+      <CommonSection title="Ingresar" />
       <section>
         <Container>
           <Row>
@@ -31,17 +31,17 @@ const Login = () => {
                 <div className="form__group">
                   <input
                     type="password"
-                    placeholder="Password"
+                    placeholder="Contraseña"
                     required
                     ref={loginPasswordRef}
                   />
                 </div>
                 <button type="submit" className="addTOCart__btn">
-                  Login
+                  Ingresar
                 </button>
               </form>
               <Link to="/register">
-                Don't have an account? Create an account
+              No tienes una cuenta? Crear una
               </Link>
             </Col>
           </Row>
