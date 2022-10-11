@@ -11,19 +11,19 @@ import "../../styles/header.css";
 
 const nav__links = [
   {
-    display: "Home",
+    display: "HOME",
     path: "/home",
   },
   {
-    display: "Foods",
+    display: "RESTAURANTES",
     path: "/foods",
   },
   {
-    display: "Cart",
+    display: "CARRITO",
     path: "/cart",
   },
   {
-    display: "Map",
+    display: "MAPA",
     path: "/contact",
   },
 ];
@@ -60,8 +60,8 @@ const Header = () => {
       <Container>
         <div className="nav__wrapper d-flex align-items-center justify-content-between">
           <div className="logo">
-            <img src={logo} alt="logo" />
-            <h5>Tasty Treat</h5>
+            <img src={logo} alt="logo" width="150"  />
+            
           </div>
 
           {/* ======= menu ======= */}
