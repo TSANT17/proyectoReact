@@ -95,14 +95,14 @@ const FoodDetails = () => {
                 <h2 className="product__title mb-3">{title}</h2>
                 <p className="product__price">
                   {" "}
-                  Price: <span>${price}</span>
+                  Precio: <span>${price}</span>
                 </p>
                 <p className="category mb-5">
                   Category: <span>{category}</span>
                 </p>
 
                 <button onClick={addItem} className="addTOCart__btn">
-                  Add to Cart
+                  Añadir al Carrito
                 </button>
               </div>
             </Col>
@@ -113,7 +113,7 @@ const FoodDetails = () => {
                   className={` ${tab === "desc" ? "tab__active" : ""}`}
                   onClick={() => setTab("desc")}
                 >
-                  Description
+                  Descripcion
                 </h6>
                 <h6
                   className={` ${tab === "rev" ? "tab__active" : ""}`}

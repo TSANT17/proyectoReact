@@ -103,7 +103,7 @@ const AllFoods = () => {
 
   return (
     <Helmet title="Restaurante">
-      <CommonSection title="Restaurante" />
+      <CommonSection title="Comidas" />
 
       <section>
       <Container>

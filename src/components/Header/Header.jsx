@@ -15,7 +15,7 @@ const nav__links = [
     path: "/home",
   },
   {
-    display: "RESTAURANTES",
+    display: "COMIDAS",
     path: "/foods",
   },
   {
