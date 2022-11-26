@@ -23,10 +23,8 @@ const FoodDetails = () => {
   const dispatch = useDispatch();
 
   const product = products.find((product) => product.id === id);
-  const [previewImg, setPreviewImg] = useState(product);
-  const { title, price, category, desc, image01 } = products;
-
-
+  const [previewImg, setPreviewImg] = useState(product.image01);
+  const { title, price, category, desc, image01 } = product;
 
   const relatedProduct = products.filter((item) => category === item.category);
 
@@ -56,7 +54,7 @@ const FoodDetails = () => {
   }, [product]);
 
   return (
-    <Helmet title="FoodDetails">
+    <Helmet title="Product-details">
       <CommonSection title={title} />
 
       <section>
@@ -68,7 +66,7 @@ const FoodDetails = () => {
                   className="img__item mb-3"
                   onClick={() => setPreviewImg(product.image01)}
                 >
-                  <img src={product.image01} alt="a" className="w-50" />
+                  <img src={product.image01} alt="" className="w-50" />
                 </div>
                 <div
                   className="img__item mb-3"
@@ -97,14 +95,14 @@ const FoodDetails = () => {
                 <h2 className="product__title mb-3">{title}</h2>
                 <p className="product__price">
                   {" "}
-                  Price: <span>${price}</span>
+                  Precio: <span>${price}</span>
                 </p>
                 <p className="category mb-5">
                   Category: <span>{category}</span>
                 </p>
 
                 <button onClick={addItem} className="addTOCart__btn">
-                  Add to Cart
+                  Añadir al Carrito
                 </button>
               </div>
             </Col>
@@ -115,7 +113,7 @@ const FoodDetails = () => {
                   className={` ${tab === "desc" ? "tab__active" : ""}`}
                   onClick={() => setTab("desc")}
                 >
-                  Description
+                  Descripcion
                 </h6>
                 <h6
                   className={` ${tab === "rev" ? "tab__active" : ""}`}
@@ -189,7 +187,7 @@ const FoodDetails = () => {
               <h2 className="related__Product-title">You might also like</h2>
             </Col>
 
-            {products.map((item) => (
+            {relatedProduct.map((item) => (
               <Col lg="3" md="4" sm="6" xs="6" className="mb-4" key={item.id}>
                 <RestaurantCard item={item} />
               </Col>
