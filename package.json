@@ -19,7 +19,8 @@
     "remixicon": "^2.5.0",
     "rsuite": "^5.19.0",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "react-google-maps": "*"
   },
   "scripts": {
     "start": "react-scripts start",

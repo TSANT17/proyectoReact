@@ -7,8 +7,9 @@ import FoodDetails from "../pages/FoodDetails";
 import Cart from "../pages/Cart";
 import Checkout from "../pages/Checkout";
 import Contact from "../pages/Contact";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
+import Login from "../Login";
+import Register from "../Register";
+import Dashboard from "../Dashboard";
 import Restaurantes from "../pages/Restaurantes";
 
 const Routers = () => {
@@ -24,6 +25,7 @@ const Routers = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/contact" element={<Contact />} />
+      <Route exact path="/dashboard" element={<Dashboard />} />
     </Routes>
   );
 };
