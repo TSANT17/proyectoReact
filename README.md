@@ -18,4 +18,4 @@ https://www.figma.com/file/0Wejde5q8bNZXFnPooORix/Proyecto-P2?node-id=1%3A3
 
 Link Documentacion: https://docs.google.com/document/d/18fQsnCKJ43cWA8-naXbr4dx1XhI7JPxr/edit?usp=sharing&ouid=103878273646069390661&rtpof=true&sd=true
 
-Link deploy: 
+Link deploy: https://cositas-react-web.netlify.app/home
