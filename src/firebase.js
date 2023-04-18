@@ -16,26 +16,15 @@ import {
   where,
   addDoc,
 } from "firebase/firestore";
-
 const firebaseConfig = {
-    apiKey: "AIzaSyBJGIvT7P6FnB8n0PPFXoACvGCrFLd4vWY",
-
-    authDomain: "proyecto-575c3.firebaseapp.com",
-  
-    databaseURL: "https://proyecto-575c3-default-rtdb.firebaseio.com",
-  
-    projectId: "proyecto-575c3",
-  
-    storageBucket: "proyecto-575c3.appspot.com",
-  
-    messagingSenderId: "437277895887",
-  
-    appId: "1:437277895887:web:3d5b1b28e60207c1301bba",
-  
-    measurementId: "G-8SZ1WT3YP6"
-  
+  apiKey: "AIzaSyCPLoTJj5f8rXhkSpyLydvXtUH0Lv2bNCI",
+  authDomain: "proyectoreact-39bc0.firebaseapp.com",
+  projectId: "proyectoreact-39bc0",
+  storageBucket: "proyectoreact-39bc0.appspot.com",
+  messagingSenderId: "974812628332",
+  appId: "1:974812628332:web:f05016cbd479b0a1781f49",
+  measurementId: "G-XJK200TYEV"
 };
-
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);

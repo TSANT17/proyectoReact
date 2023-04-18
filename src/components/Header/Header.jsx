@@ -24,7 +24,7 @@ const nav__links = [
   },
   {
     display: "MAPA",
-    path: "/contact",
+    path: "/mapa",
   },
 ];
 
@@ -56,17 +56,14 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header" ref={headerRef}>
+    <header className='header' ref={headerRef}>
       <Container>
-        <div className="nav__wrapper d-flex align-items-center justify-content-between">
-          <div className="logo">
-            <img src={logo} alt="logo" width="150"  />
-            
-          </div>
+        <div className='nav__wrapper d-flex align-items-center justify-content-between'>
+          <img src={logo} alt='logo' width='150' />
 
           {/* ======= menu ======= */}
-          <div className="navigation" ref={menuRef} onClick={toggleMenu}>
-            <div className="menu d-flex align-items-center gap-5">
+          <div className='navigation' ref={menuRef} onClick={toggleMenu}>
+            <div className='menu d-flex align-items-center gap-5'>
               {nav__links.map((item, index) => (
                 <NavLink
                   to={item.path}
@@ -82,20 +79,20 @@ const Header = () => {
           </div>
 
           {/* ======== nav right icons ========= */}
-          <div className="nav__right d-flex align-items-center gap-4">
-            <span className="cart__icon" onClick={toggleCart}>
-              <i class="ri-shopping-basket-line"></i>
-              <span className="cart__badge">{totalQuantity}</span>
+          <div className='nav__right d-flex align-items-center gap-4'>
+            <span className='cart__icon' onClick={toggleCart}>
+              <i class='ri-shopping-basket-line'></i>
+              <span className='cart__badge'>{totalQuantity}</span>
             </span>
 
-            <span className="user">
-              <Link to="/login">
-                <i class="ri-user-line"></i>
+            <span className='user'>
+              <Link to='/login'>
+                <i class='ri-user-line'></i>
               </Link>
             </span>
 
-            <span className="mobile__menu" onClick={toggleMenu}>
-              <i class="ri-menu-line"></i>
+            <span className='mobile__menu' onClick={toggleMenu}>
+              <i class='ri-menu-line'></i>
             </span>
           </div>
         </div>
